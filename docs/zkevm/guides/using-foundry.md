@@ -63,7 +63,7 @@ You can check out the contents of the newly built project by switching to your I
 2. Open your CLI and install dependencies with this command:
 
     ```bash
-    npm install @openzeppelin/contracts-upgradeable
+    forge install @openzeppelin/openzeppelin-contracts@v4.9.3
     ```
 
 3. Remap dependencies to easy-to-read filenames with the command,
@@ -72,11 +72,11 @@ You can check out the contents of the newly built project by switching to your I
     forge remappings > remappings.txt
     ```
 
-4. Inside the new `remapping.txt` file, rename the referencing `openzeppelin-contracts` to `openzeppelin`, which is the name used when importing. That is, change `openzeppelin-contracts/=lib/openzeppelin-contracts` &rarr; `openzeppelin/=lib/openzeppelin-contracts`.
+4. Inside the new `remapping.txt` file, rename the referencing `openzeppelin-contracts` to `@openzeppelin`, which is the name used when importing. That is, change `openzeppelin-contracts/=lib/openzeppelin-contracts` &rarr; `@openzeppelin/=lib/openzeppelin-contracts`.
 
 5. Copy the smart contract code in OpenZeppelin: **Copy to Clipboard**
 
-6. In the IDE, open a new `.sol` file, name it and paste the copied code to this file. This is in fact the actual smart contract for the NFT.
+6. In the IDE, open a new `Sbt.sol` file, name it and paste the copied code to this file. This is in fact the actual smart contract for the NFT.
 
 ## Add Control on Token Transfers
 
@@ -139,13 +139,13 @@ This is the file that contains the metadata for the token which includes the ima
 
 In order to deploy on the zkEVM Testnet, populate the `.env` file in the usual way. That is, 
 
-- Create a `.env.sample` file within the `src` folder
+- Create a `.env.sample` file in the root of project
 
 - Populate `.env.sample` file with your `ACCOUNT_PRIVATE_KEY` and the zkEVM Testnet's `RPC URL` found [here](/zkevm/develop.md#connecting-to-zkevm). So the `.env.sample` file will look like this:
 
     ```json
     RPC_URL="https://rpc.public.zkevm-test.net"
-    PVTKEY="<insert private key here>"
+    PRIVATE_KEY="<insert private key here>"
     ```
 
 - Copy the contents of the `.env.sample` file to the `.env` file,
@@ -183,7 +183,7 @@ Make sure `.env` is in the `.gitignore` file to avoid uploading your `ACCOUNT_PR
     which executes the following:
 
     - Does a `forge create`
-    - Passes the `RPC_URL` and `PVTKEY` 
+    - Passes the `RPC_URL` and `PRIVATE_KEY` 
     - References the actual smart contract
 
     For example, when deploying the `Sbt.sol` contract, the command will look like this:
