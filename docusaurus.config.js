@@ -368,7 +368,7 @@ module.exports = {
               rel: null,
             },
             {
-              href: 'https://github.com/0xPolygonMiden/miden-base/tree/main/docs/src',
+              href: 'https://0xpolygonmiden.github.io/miden-base/introduction.html',
               label: 'Learn about the Miden Rollup',
               target: '_blank',
               rel: null,
