@@ -1,7 +1,7 @@
 ---
 id: differences-validium-zkevm
 title: What are the Differences Between Deploying the CDK Validium & Polygon zkEVM
-sidebar_label: Validium vs. zkEVM
+sidebar_label: Validium vs. Rollup
 description: "Explore the distinctions between deploying a CDK-developed chain with validium versus Polygon's zkEVM."
 keywords:
   - docs
@@ -20,7 +20,7 @@ Polygon CDK Validium is a unique scaling solution that builds upon the foundatio
 
 ## Deployment Differences
 
-### zkEVM Deployment
+### zkEVM (Rollup) Deployment
 
 1. **zkEVM Node**: This node manages the Polygon zkEVM Network, processing transactions, maintaining state, and interacting with Ethereum.
    - Components: JSON RPC, Pool DB, Sequencer, Etherman, Synchronizer, State DB, Aggregator, Prover.
