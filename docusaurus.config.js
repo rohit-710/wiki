@@ -211,6 +211,12 @@ module.exports = {
           position: "left",
           items: [
             {
+              href: '/cdk/',
+              label: 'Welcome to the CDK',
+              target: '_self',
+              rel: null,
+            },
+            {
               href: '/cdk/what-is-polygon-cdk/',
               label: 'What is the CDK?',
               target: '_self',
@@ -279,6 +285,12 @@ module.exports = {
             {
               to: '/category/deploy-zkevm/',
               label: 'Launch a zkEVM Rollup',
+              target: '_self',
+              rel: null,
+            },
+            {
+              to: '/zkevm/architecture/',
+              label: 'zkEVM Pre-Specs',
               target: '_self',
               rel: null,
             },

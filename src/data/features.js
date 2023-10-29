@@ -5,23 +5,23 @@ export const firstRow = [
     },
     {
         title: "Build a Validium-Based App-Chain",
-        linkUrl: "/category/polygon-chain-development-kit/",
+        linkUrl: "/category/build-a-validium-based-chain/",
     },
     {
         title: "Deploy Your Own zkEVM Rollup",
-        linkUrl: "/category/zkevm/",
+        linkUrl: "/category/build-a-rollup-based-chain/",
     },
     {
         title: "Deploy Your Own Miden Rollup",
-        linkUrl: "/category/miden/",
+        linkUrl: "https://github.com/0xPolygonMiden/miden-base",
     },
     {
         title: "Build a PoS-Powered dApp",
-        linkUrl: "/category/build-a-pos-powered-dapp/",
+        linkUrl: "/category/build-a-dapp/",
     },
     {
         title: "Build a ZK-Powered dApp",
-        linkUrl: "/category/build-a-zk-powered-dapp/",
+        linkUrl: "/category/start-building/",
     },
     {
         title: "Build a dApp with Client-Side Proving",
@@ -41,10 +41,10 @@ export const firstRow = [
     },
     {
         title: "Delegate Your Tokens",
-        linkUrl: "/category/operate-a-node",
+        linkUrl: "/category/delegate-your-tokens/",
     },
     {
         title: "Participate in Governance",
-        linkUrl: "/category/become-a-validator/",
+        linkUrl: "/category/proposals/",
     },
 ];
