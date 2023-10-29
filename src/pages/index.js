@@ -1,4 +1,5 @@
 import * as React from "react";
+import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
@@ -18,20 +19,11 @@ function FirstRow({ title, status, description, linkUrl }) {
   );
 }
 
-function smoothScrollTo(target) {
-  const element = document.querySelector(target);
-  if (element) {
-    window.scrollTo({
-      behavior: 'smooth',
-      top: element.offsetTop
-    });
-  }
-}
-
 function Home() {
   const context = useDocusaurusContext();
 
   return (
+    <Layout>
       <div className="bootstrap-wrapper">
         <br />
         <div className="container">
@@ -54,6 +46,7 @@ function Home() {
           <br />
         </div>
       </div>
+      </Layout>
   );
 }
 
