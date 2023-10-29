@@ -837,93 +837,164 @@ module.exports = {
     },
     "zkevm/open-source-repos",
   ],
-  /*
-   *
-   * ************************** Edge Section *************************
-   *
-   * This section includes the official product documentation and
-   * developer guides for Polygon Edge.
-   *
-   * **********************************************************************
-   *
-   */
 
-  edge: [
-    {
-      type: "html",
-      value: "Polygon Edge",
-      className: "sidebar-title",
-    },
-    "edge/index",
-    "edge/what-is-edge",
-    "edge/operate/quickstart",
+ /*
+  *
+  * ************************** CDK Section *************************
+  *
+  * This section includes the official product documentation and
+  * developer guides for Polygon CDK.
+  *
+  * **********************************************************************
+  *
+  */
+
+ cdk:[
+ {
+  type: "category",
+  label: "Polygon Chain Development Kit",
+  link: {
+    type: "generated-index",
+  },
+  items: [
+    "cdk/what-is-polygon-cdk",
+    "cdk/cdk-program",
+{
+  type: "category",
+  label: "Validium",
+  link: {
+    type: "generated-index",
+  },
+  collapsed: true,
+  items: [
+          "cdk/validium/validium-attributes",
+          "cdk/validium/dac-overview",
+          "cdk/validium/differences-validium-zkevm",
+          "cdk/validium/allowlists",
+          ],
+},
+{
+  type: "category",
+  label: "Rollups",
+  link: {
+    type: "generated-index",
+  },
+  collapsed: true,
+  items: [
     {
       type: "category",
-      label: "System Design",
+      label: "zkEVM",
       link: {
         type: "generated-index",
       },
       collapsed: true,
       items: [
-        "edge/design/overview",
+         {
+           type: "category",
+           label: "Setup zkNode",
+           link: {
+             type: "generated-index",
+           },
+           collapsed: true,
+           items: ["zkevm/setup-local-node", 
+                  "zkevm/setup-production-node"
+                ],
+         },
+         {
+           type: "category",
+           label: "Deploy zkEVM",
+           link: {
+             type: "generated-index",
+           },
+           collapsed: true,
+           items: [
+             "zkevm/deploy-fullzkevm",
+             "zkevm/step2-fullzkevm",
+             "zkevm/step3-fullzkevm",
+             "zkevm/step4-fullzkevm",
+             "zkevm/step5-fullzkevm",
+             "zkevm/step6-fullzkevm",
+             "zkevm/setup-goerlinode",
+           ],
+         },
+         {
+           type: "category",
+           label: "FAQs",
+           link: {
+             type: "generated-index",
+           },
+           collapsed: true,
+           items: [
+             "zkevm/faq/zkevm-general-faq",
+             "zkevm/faq/zkevm-protocol-faq",
+             "zkevm/faq/zkevm-eth-faq",
+             "zkevm/risk-disclosure",
+           ],
+         },
+         //"zkevm/open-source-repos",
+             ],
+    },
+    {
+      type: "category",
+      label: "Miden - Testnet",
+      link: {
+        type: "generated-index",
+      },
+      collapsed: true,
+      items: [
         {
-          type: "category",
-          label: "Consensus",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "edge/design/consensus/polybft/polybft-overview",
-            "edge/design/consensus/polybft/ibft-overview",
-          ],
+          type: 'link',
+          label: 'Get Started with Miden',
+          href: 'https://0xpolygonmiden.github.io/examples/',
         },
         {
-          type: "category",
-          label: "Bridge",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "edge/design/bridge/overview",
-            "edge/design/bridge/statesync",
-            "edge/design/bridge/checkpoint",
-            {
-              type: "category",
-              label: "Assets",
-              link: {
-                type: "generated-index",
-              },
-              items: [
-                "edge/design/bridge/assets/erc/erc20",
-                "edge/design/bridge/assets/erc/erc721",
-                "edge/design/bridge/assets/erc/erc1155",
-              ],
-            },
-          ],
+          type: 'link',
+          label: 'Deploy a Miden Rollup',
+          href: 'https://github.com/0xPolygonMiden/miden-base/tree/main/docs/src',
         },
-        "edge/design/libp2p",
-        {
-          type: "category",
-          label: "Runtime",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "edge/design/runtime/runtime",
-            "edge/design/runtime/runtime-allowlist",
-          ],
-        },
-        "edge/design/blockchain",
-        "edge/design/mempool",
-        "edge/design/txpool",
-        "edge/design/txrelayer",
-        "edge/design/json-rpc",
-        "edge/design/grpc",
+      ],
+    },
+  ],
+},
+{
+  type: "category",
+  label: "Edge",
+  link: {
+    type: "generated-index",
+  },
+  collapsed: true,
+  items: [
+    {
+      type: "category",
+      label: "Prepare Your Environment",
+      link: {
+        type: "generated-index",
+      },
+      collapsed: true,
+      items: [
+        "edge/operate/requirements",
+        "edge/operate/install",
+      ],
+    },
+    "edge/operate/ibft-to-polybft",
+    {
+      type: "category",
+      label: "Deploy a Chain",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        "edge/operate/deploy/deploy-index",
+        "edge/operate/deploy/spawn-test-chain",
+        "edge/operate/deploy/how-to-generate-genesis",
+        "edge/operate/deploy/how-to-configure-rootchain",
+        "edge/operate/deploy/genesis-validators",
+        "edge/operate/deploy/how-to-start",
       ],
     },
     {
       type: "category",
-      label: "Build an Edge-Powered Chain",
+      label: "Operate Your Chain",
       link: {
         type: "generated-index",
       },
@@ -931,86 +1002,51 @@ module.exports = {
       items: [
         {
           type: "category",
-          label: "Prepare Your Environment",
-          link: {
-            type: "generated-index",
-          },
-          collapsed: true,
-          items: ["edge/operate/requirements", "edge/operate/install"],
-        },
-        "edge/operate/ibft-to-polybft",
-        {
-          type: "category",
-          label: "Deploy a Chain",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "edge/operate/deploy/deploy-index",
-            "edge/operate/deploy/spawn-test-chain",
-            "edge/operate/deploy/how-to-generate-genesis",
-            "edge/operate/deploy/how-to-configure-rootchain",
-            "edge/operate/deploy/genesis-validators",
-            "edge/operate/deploy/how-to-start",
-          ],
-        },
-        {
-          type: "category",
-          label: "Operate Your Chain",
+          label: "Access Control",
           link: {
             type: "generated-index",
           },
           collapsed: true,
           items: [
-            {
-              type: "category",
-              label: "Access Control",
-              link: {
-                type: "generated-index",
-              },
-              collapsed: true,
-              items: [
-                "edge/operate/deploy/access-control/allowlist-add-remove",
-              ],
-            },
-            {
-              type: "category",
-              label: "Staking",
-              link: {
-                type: "generated-index",
-              },
-              collapsed: true,
-              items: [
-                "edge/operate/deploy/staking/how-to-stake",
-                "edge/operate/deploy/staking/unstake",
-              ],
-            },
-            {
-              type: "category",
-              label: "Transfers",
-              link: {
-                type: "generated-index",
-              },
-              collapsed: true,
-              items: [
-                "edge/operate/deploy/transfers/cross-chain-deposit",
-                "edge/operate/deploy/transfers/cross-chain-withdraw",
-              ],
-            },
+            "edge/operate/deploy/access-control/allowlist-add-remove",
           ],
         },
         {
           type: "category",
-          label: "Upgrade Your Chain",
+          label: "Staking",
           link: {
             type: "generated-index",
           },
           collapsed: true,
           items: [
-            "edge/operate/deploy/upgrades/how-to-upgrade",
-            "edge/operate/deploy/upgrades/v1.1-hardforks",
+            "edge/operate/deploy/staking/how-to-stake",
+            "edge/operate/deploy/staking/unstake",
           ],
         },
+        {
+          type: "category",
+          label: "Transfers",
+          link: {
+            type: "generated-index",
+          },
+          collapsed: true,
+          items: [
+            "edge/operate/deploy/transfers/cross-chain-deposit",
+            "edge/operate/deploy/transfers/cross-chain-withdraw",
+          ],
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Upgrade Your Chain",
+      link: {
+        type: "generated-index",
+      },
+      collapsed: true,
+      items: [
+        "edge/operate/deploy/upgrades/how-to-upgrade",
+        "edge/operate/deploy/upgrades/v1.1-hardforks",
       ],
     },
     {
@@ -1139,33 +1175,10 @@ module.exports = {
     },
     "edge/faq",
   ],
-  /*
-   *
-   * ************************** CDK Section *************************
-   *
-   * This section includes the official product documentation and
-   * developer guides for Polygon CDK.
-   *
-   * **********************************************************************
-   *
-   */
-
-  cdk: [
-    {
-      type: "html",
-      value: "Polygon Chain Development Kit",
-      className: "sidebar-title",
-    },
-    "cdk/index",
-    "cdk/what-is-polygon-cdk",
-    "cdk/validium/quickstart",
-    "cdk/validium/validium-attributes",
-    "cdk/validium/dac-overview",
-    "cdk/validium/differences-validium-zkevm",
-    "cdk/validium/allowlists",
-    "cdk/cdk-program",
-  ],
-
+},
+],
+},
+],
   /*
    *
    * ***************************** Specs Section **************************
