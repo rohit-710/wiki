@@ -1,38 +1,50 @@
 export const firstRow = [
     {
-        title: "Build a Validium-based App-chain",
-        linkUrl: "/docs/cdk/",
-        imageUrl: "img/logo-round-dark.png",
-        description: "Build next-generation app-chains using the new Polygon CDK."
+        title: "Learn about Polygon 2.0",
+        linkUrl: "https://github.com/0xPolygon/wiki#polygon-20",
     },
     {
-        title: "Deploy a zkEVM Rollup",
-        linkUrl: "/docs/category/deploy-zkevm/",
-        imageUrl: "img/logo-round-dark.png",
-        description: "Leverage Polygon's zkEVM for secure, fast off-chain transactions, guaranteed by ZK proofs."
+        title: "Build a Validium-Based App-Chain",
+        linkUrl: "/category/polygon-chain-development-kit/",
     },
     {
-        title: "Deploy a Miden Rollup",
-        linkUrl: "https://github.com/0xPolygonMiden",
-        imageUrl: "img/logo-round-dark.png",
-        description: "Deploy a Miden Rollup with client-side proving to scale with privacy."
+        title: "Deploy Your Own zkEVM Rollup",
+        linkUrl: "/category/zkevm/",
     },
     {
-        title: "Build a dApp on zkEVM",
-        linkUrl: "/docs/zkevm/develop",
-        imageUrl: "img/logo-round-dark.png",
-        description: "Build highly scalable and secure applications using ZK tech."
+        title: "Deploy Your Own Miden Rollup",
+        linkUrl: "/category/miden/",
     },
     {
-        title: "Run a PoS node",
-        linkUrl: "/docs/category/operate-a-node",
-        imageUrl: "img/logo-round-dark.png",
-        description: "Contribute to decentralized computing by running your own PoS node."
+        title: "Build a PoS-Powered dApp",
+        linkUrl: "/category/build-a-pos-powered-dapp/",
+    },
+    {
+        title: "Build a ZK-Powered dApp",
+        linkUrl: "/category/build-a-zk-powered-dapp/",
+    },
+    {
+        title: "Build a dApp with Client-Side Proving",
+        linkUrl: "https://0xpolygonmiden.github.io/examples/",
+    },
+    {
+        title: "Run a PoS Full Node",
+        linkUrl: "/category/operate-a-node",
     },
     {
         title: "Become a PoS Validator",
-        linkUrl: "/docs/category/become-a-validator/",
-        imageUrl: "img/logo-round-dark.png",
-        description: "Maintain the PoS network by becoming a validator."
+        linkUrl: "/category/become-a-validator/",
+    },
+    {
+        title: "Learn about POL",
+        linkUrl: "/pos/assets/pol/",
+    },
+    {
+        title: "Delegate Your Tokens",
+        linkUrl: "/category/operate-a-node",
+    },
+    {
+        title: "Participate in Governance",
+        linkUrl: "/category/become-a-validator/",
     },
 ];

@@ -1,10 +1,9 @@
 const math = require('remark-math');
 const katex = require('rehype-katex');
-const redirects = require('./redirects');
 
 module.exports = {
   title: "Polygon Wiki",
-  tagline: "The official documentation for Polygon.",
+  tagline: "The official documentation for 0xPolygon.",
   url: "https://wiki.polygon.technology",
   baseUrl: "/",
   favicon: "img/logo-round-purple.png",
@@ -14,28 +13,22 @@ module.exports = {
   customFields: {
     description: "Build your next application on Polygon.",
   },
-  plugins: [
-    [
-      '@docusaurus/plugin-client-redirects',
-      {
-        redirects: redirects,
-      },
-    ],
-  ],
   onBrokenLinks: 'log',
   themeConfig: {
     metadata: [{ name: 'description', content: 'Welcome to Polygon Wiki, the official documentation for Polygon. Learn about Polygon and its suite of Ethereum-scaling solutions.' }],
+    /*
     announcementBar: {
       id: 'banner',
       content: `
         <div class="announcement-bar">
             Discover the Next Evolution with Polygon CDK. Learn more
-            <a href="https://wiki.polygon.technology/docs/cdk" target="_self" class="announcement-link" style="color: #ffffff;">here</a>
+            <a href="https://wiki.polygon.technology/cdk" target="_self" class="announcement-link" style="color: #ffffff;">here</a>
         </div>
       `,
       textColor: '#ffffff',
       isCloseable: true,
     },
+    */
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: true,
@@ -214,36 +207,36 @@ module.exports = {
       },
       items: [
         {
-          to: 'https://university.polygon.technology/',
-          label: 'New to Polygon?',
-          target: '_blank',
-          rel: null,
-        },
-        {
           label: "CDK",
           position: "left",
           items: [
             {
-              href: '/docs/cdk',
-              label: 'Welcome to the CDK',
+              href: '/cdk/what-is-polygon-cdk/',
+              label: 'What is the CDK?',
               target: '_self',
               rel: null,
             },
             {
-              href: '/docs/cdk/validium/quickstart/',
-              label: 'Get Started with the Validium',
+              href: '/cdk/validium/quickstart/',
+              label: 'Get Started with the CDK',
               target: '_self',
               rel: null,
             },
             {
-              href: '/docs/cdk/validium/validium-attributes/',
-              label: 'Validium System Attributes',
+              href: '/cdk/validium/validium-attributes/',
+              label: 'Learn about the Validium',
               target: '_self',
               rel: null,
             },
             {
-              href: '/docs/cdk/validium/dac-overview/',
-              label: 'Data Availability',
+              href: '/cdk/validium/dac-overview/',
+              label: 'Learn about Data Availability',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/category/cdk-rollups/',
+              label: 'Launch a Rollup',
               target: '_self',
               rel: null,
             },
@@ -254,32 +247,38 @@ module.exports = {
           position: "left",
           items: [
             {
-              href: '/docs/zkevm/',
-              label: 'Welcome to zkEVM',
+              to: '/category/polygon-zkevm/',
+              label: 'What is zkEVM?',
               target: '_self',
               rel: null,
             },
             {
-              to: '/docs/category/start-building/',
-              label: 'Build a dApp',
+              to: '/zkevm/develop/',
+              label: 'Get Started with zkEVM',
               target: '_self',
               rel: null,
             },
             {
-              href: '/docs/category/setup-zknode/',
-              label: 'Run a Node',
+              to: '/zkevm/introduction/',
+              label: 'Learn about zkEVM',
               target: '_self',
               rel: null,
             },
             {
-              to: '/docs/category/deploy-zkevm/',
-              label: 'Launch Your zkEVM',
+              to: '/category/build-a-zk-powered-dapp/',
+              label: 'Build a ZK-Powered dApp',
               target: '_self',
               rel: null,
             },
             {
-              href: '/docs/category/zkevm/',
-              label: 'Pre-Specs',
+              href: '/category/setup-zknode/',
+              label: 'Run a ZK Node',
+              target: '_self',
+              rel: null,
+            },
+            {
+              to: '/category/zkevm/',
+              label: 'Launch a zkEVM Rollup',
               target: '_self',
               rel: null,
             },
@@ -290,38 +289,38 @@ module.exports = {
           position: "left",
           items: [
             {
-              href: '/docs/pos/',
-              label: 'Welcome to PoS',
+              href: '/pos/what-is-polygon-pos/',
+              label: 'What is PoS?',
               target: '_self',
               rel: null,
             },
             {
-              href: '/docs/category/system-design/',
+              href: '/category/polygon-pos/',
+              label: 'Get Started with PoS',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/category/polygon-pos/',
               label: 'Learn about PoS',
               target: '_self',
               rel: null,
             },
             {
-              href: '/docs/pos/assets/pol/',
-              label: 'Learn about POL',
+              to: '/category/build-a-pos-powered-dapp/',
+              label: 'Build a PoS-Powered dApp',
               target: '_self',
               rel: null,
             },
             {
-              to: '/docs/category/build-a-dapp/',
-              label: 'Build a dApp',
+              href: '/category/operate-a-node/',
+              label: 'Run a PoS Node',
               target: '_self',
               rel: null,
             },
             {
-              href: '/docs/category/become-a-validator/',
-              label: 'Become a Validator',
-              target: '_self',
-              rel: null,
-            },
-            {
-              to: '/docs/category/proposals/',
-              label: 'Raise a Proposal',
+              href: '/category/become-a-validator/',
+              label: 'Become a PoS Validator',
               target: '_self',
               rel: null,
             },
@@ -332,26 +331,26 @@ module.exports = {
           position: "left",
           items: [
             {
-              href: '/docs/edge/',
-              label: 'Welcome to Edge',
+              href: '/edge/what-is-edge/',
+              label: 'What is Edge?',
               target: '_self',
               rel: null,
             },
             {
-              href: '/docs/edge/operate/quickstart/',
+              href: '/edge/operate/quickstart/',
               label: 'Get Started with Edge',
               target: '_self',
               rel: null,
             },
             {
-              href: '/docs/category/system-design-1/',
+              href: '/category/system-design/',
               label: 'Learn about Edge',
               target: '_self',
               rel: null,
             },
             {
-              to: '/docs/category/build-an-edge-powered-chain/',
-              label: 'Deploy a Chain',
+              to: '/category/build-an-edge-powered-chain/',
+              label: 'Deploy an Edge-Powered Chain',
               target: '_self',
               rel: null,
             },
@@ -362,13 +361,19 @@ module.exports = {
           position: "left",
           items: [
             {
+              href: 'https://github.com/0xPolygonMiden',
+              label: 'What is Miden?',
+              target: '_blank',
+              rel: null,
+            },
+            {
               href: 'https://0xpolygonmiden.github.io/examples/',
               label: 'Get Started with Miden',
               target: '_blank',
               rel: null,
             },
             {
-              href: 'https://0xpolygonmiden.github.io/miden-base/introduction.html',
+              href: 'https://github.com/0xPolygonMiden/miden-base/tree/main/docs/src',
               label: 'Learn about the Miden Rollup',
               target: '_blank',
               rel: null,
@@ -389,32 +394,25 @@ module.exports = {
           rel: null,
         },
         {
-          label: "Apps & Tools",
+          label: "Support",
           position: "right",
           items: [
             {
-              href: '/docs/tools/matic-js/get-started',
-              label: 'Matic.js',
-              target: '_self',
+              href: 'https://support.polygon.technology/support/solutions',
+              label: 'Knowledge Base',
+              target: '_blank',
               rel: null,
             },
             {
-              href: '/docs/tools/chain-indexer-framework/overview',
-              label: 'Chain Indexer Framework',
-              target: '_self',
+              href: 'https://support.polygon.technology/support/home',
+              label: 'Raise a Ticket',
+              target: '_blank',
               rel: null,
             },
           ],
         },
         {
-          to: 'https://support.polygon.technology/support/solutions',
-          label: 'Support',
-          position: "right",
-          target: '_blank',
-          rel: null,
-        },
-        {
-          to: '/docs/contribute/orientation/',
+          to: '/contribute/orientation/',
           label: 'Contribute',
           position: "right",
           target: '_self',
@@ -443,6 +441,7 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/0xPolygon/wiki/tree/main/",
           path: "docs",
