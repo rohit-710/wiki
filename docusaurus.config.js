@@ -235,7 +235,7 @@ module.exports = {
               rel: null,
             },
             {
-              href: '/category/cdk-rollups/',
+              href: '/category/build-a-rollup-based-chain/',
               label: 'Launch a Rollup',
               target: '_self',
               rel: null,
@@ -247,8 +247,8 @@ module.exports = {
           position: "left",
           items: [
             {
-              to: '/category/polygon-zkevm/',
-              label: 'What is zkEVM?',
+              to: '/zkevm/',
+              label: 'Welcome to zkEVM',
               target: '_self',
               rel: null,
             },
@@ -265,7 +265,7 @@ module.exports = {
               rel: null,
             },
             {
-              to: '/category/build-a-zk-powered-dapp/',
+              to: '/category/start-building/',
               label: 'Build a ZK-Powered dApp',
               target: '_self',
               rel: null,
@@ -277,80 +277,8 @@ module.exports = {
               rel: null,
             },
             {
-              to: '/category/zkevm/',
+              to: '/category/deploy-zkevm/',
               label: 'Launch a zkEVM Rollup',
-              target: '_self',
-              rel: null,
-            },
-          ],
-        },
-        {
-          label: "PoS",
-          position: "left",
-          items: [
-            {
-              href: '/pos/what-is-polygon-pos/',
-              label: 'What is PoS?',
-              target: '_self',
-              rel: null,
-            },
-            {
-              href: '/category/polygon-pos/',
-              label: 'Get Started with PoS',
-              target: '_self',
-              rel: null,
-            },
-            {
-              href: '/category/polygon-pos/',
-              label: 'Learn about PoS',
-              target: '_self',
-              rel: null,
-            },
-            {
-              to: '/category/build-a-pos-powered-dapp/',
-              label: 'Build a PoS-Powered dApp',
-              target: '_self',
-              rel: null,
-            },
-            {
-              href: '/category/operate-a-node/',
-              label: 'Run a PoS Node',
-              target: '_self',
-              rel: null,
-            },
-            {
-              href: '/category/become-a-validator/',
-              label: 'Become a PoS Validator',
-              target: '_self',
-              rel: null,
-            },
-          ],
-        },
-        {
-          label: "Edge",
-          position: "left",
-          items: [
-            {
-              href: '/edge/what-is-edge/',
-              label: 'What is Edge?',
-              target: '_self',
-              rel: null,
-            },
-            {
-              href: '/edge/operate/quickstart/',
-              label: 'Get Started with Edge',
-              target: '_self',
-              rel: null,
-            },
-            {
-              href: '/category/system-design/',
-              label: 'Learn about Edge',
-              target: '_self',
-              rel: null,
-            },
-            {
-              to: '/category/build-an-edge-powered-chain/',
-              label: 'Deploy an Edge-Powered Chain',
               target: '_self',
               rel: null,
             },
@@ -382,6 +310,78 @@ module.exports = {
               href: 'https://0xpolygonmiden.github.io/miden-vm/',
               label: 'Learn about MidenVM',
               target: '_blank',
+              rel: null,
+            },
+          ],
+        },
+        {
+          label: "Edge",
+          position: "left",
+          items: [
+            {
+              href: '/edge/',
+              label: 'Welcome to Edge',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/edge/operate/quickstart/',
+              label: 'Get Started with Edge',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/category/system-design-1/',
+              label: 'Learn about Edge',
+              target: '_self',
+              rel: null,
+            },
+            {
+              to: '/category/build-an-edge-powered-chain/',
+              label: 'Deploy an Edge-Powered Chain',
+              target: '_self',
+              rel: null,
+            },
+          ],
+        },
+        {
+          label: "PoS",
+          position: "left",
+          items: [
+            {
+              href: '/pos/',
+              label: 'Welcome to PoS',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/pos/getting-started/',
+              label: 'Get Started with PoS',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/category/system-design/',
+              label: 'Learn about PoS',
+              target: '_self',
+              rel: null,
+            },
+            {
+              to: '/category/build-a-dapp/',
+              label: 'Build a PoS-Powered dApp',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/category/operate-a-node/',
+              label: 'Run a PoS Node',
+              target: '_self',
+              rel: null,
+            },
+            {
+              href: '/category/become-a-validator/',
+              label: 'Become a PoS Validator',
+              target: '_self',
               rel: null,
             },
           ],
