@@ -41,7 +41,7 @@ Every computation, whether executed by the Main SM or any of the specialist stat
 
 ### Generic Registers
 
-In order to emulate the EVM opcodes, the Polygon zkEVM introduces six state-related generic registers, namely; $\texttt{A}$, $\texttt{B}$, $\texttt{C}$, $\texttt{D}$ and $\texttt{E}$. Each is an equivalent to $256$-bit EVM words. 
+In order to emulate the EVM opcodes, the Polygon zkEVM introduces five state-related generic registers, namely; $\texttt{A}$, $\texttt{B}$, $\texttt{C}$, $\texttt{D}$ and $\texttt{E}$. Each is equivalent to $256$-bit EVM words. 
 
 However, since the Main SM operates over a finite field of almost, but less than $64$ bits, each register is split into $8$ subcomponents of $32$ bits each:
 
