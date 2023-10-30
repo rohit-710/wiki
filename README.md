@@ -512,9 +512,9 @@ If you're ever contacted by one of these individuals, take the following steps t
 | ❗ Beware of Impersonation Scams: Always cross-verify the identity of the person contacting you. Confirm that their contact details align with the message source and seek additional verification when in doubt.|
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-- [@DannyS03](https://github.com/DannyS03): Lead contact, primarily focuses on CDK, PoS & ZK, along with project organization.
-- [@EmpieichO](https://github.com/EmpieichO): Primarily focusses on zkEVM & Miden, and specifications.
-- [@cerberushades](https://github.com/cerberushades): Primarily focuses on Polygon ID.
+- [@0xgraciegrace](https://github.com/0xgraciegrace): Lead contact, primarily focuses on project organization.
+- [@EmpieichO](https://github.com/EmpieichO): Primarily focusses on CDK and Rollups.
+- [@cerberushades](https://github.com/cerberushades): Primarily focuses on PoS and Polygon ID.
 
 ## License
 
