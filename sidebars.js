@@ -1403,21 +1403,22 @@ module.exports = {
   },
 {
   type: "category",
-  label: "Build a Validium-Based Chain",
+  label: "Build a CDK Validium-Based Chain",
   link: {
     type: "generated-index",
   },
   collapsed: true,
   items: [
-          "cdk/validium/validium-attributes",
+          "cdk/validium/what-is-validium",
           "cdk/validium/dac-overview",
+          "cdk/validium/validium-attributes",
           "cdk/validium/differences-validium-zkevm",
           "cdk/validium/allowlists",
           ],
 },
 {
   type: "category",
-  label: "Build a Rollup-Based Chain",
+  label: "Build a CDK Rollup-Based Chain",
   link: {
     type: "generated-index",
   },
@@ -1437,7 +1438,7 @@ module.exports = {
 },
 {
   type: 'link',
-  label: 'Build an Edge-Based Chain',
+  label: 'Build a CDK Edge-Based Chain',
   href: 'https://wiki.polygon.technology/edge/',
 },
 ],
