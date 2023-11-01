@@ -16,7 +16,7 @@ jobs:
       AWS_REGION: eu-west-1
       ECR_REPOSITORY: wiki-dev-ecr
       ECS_SERVICE: wiki-dev-ecs-service
-      ECS_CLUSTER: frontend-staging-ecs-cluster
+      ECS_CLUSTER: frontend-dev-ecs-cluster
       ECS_TASK_DEFINITION: dev-taskdef.json
       CONTAINER_NAME: wiki-dev
     steps:
