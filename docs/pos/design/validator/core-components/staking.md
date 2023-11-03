@@ -29,15 +29,18 @@ See also [Key Management](key-management.md).
 
 Currently there is limited space to accept new validators.
 
-A new validator can only join the active set when a currently active validator unbonds.
+To join the validator set, you must submit an application through our Validator Admissions process. See: https://polygoncommunity.typeform.com/validatorshub
+
+An approved validator can only join the active set when a currently active validator unbonds.
+
+For more information on the current admissions process, please see: https://discourse-forum.polygon.technology/t/update-pos-validator-admissions/12344
 
 :::
 
-To join the validator set, you must stake your MATIC tokens. See [Validator Staking Operations](/docs/pos/validator/validator-staking-operations).
 
 ## Unstake
 
-Unstaking allows the validator to be out of active pool of validators.
+Unstaking removes the validator from the active set of validators.
 
 To ensure good participation, the validator stake is locked for 80 checkpoints.
 

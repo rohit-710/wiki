@@ -996,6 +996,7 @@ module.exports = {
             "zkevm/guides/using-foundry",
             "zkevm/guides/using-hardhat",
             "zkevm/guides/verify-smart-contract",
+            "zkevm/guides/zkevmbridge-guides"
           ],
         },
         {

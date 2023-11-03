@@ -191,7 +191,7 @@ module.exports = {
     algolia: {
       indexName: "matic_developer",
       appId: '16JCDEHCCN',
-      apiKey: "d172fe1ed43468315f82bd9679515131",
+      apiKey: "757c19b23127e9c6959da7f13b71cfab",
       contextualSearch: true,
       algoliaOptions: {
         attributesToSnippet: ['content:20'],
