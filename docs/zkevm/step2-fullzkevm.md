@@ -54,12 +54,29 @@ rm -rf go1.20.4.linux-amd64.tar.gz
 
 ## Download/Extract Mainnet Files
 
-Next step in the process is to download the zkEVM Mainnet files. This download is over **70GB**, so it's recommended to run the download in a tmux/screen session to handle any network interruptions:
+Next step in the process is to download the zkEVM Mainnet files. This download is over **70GB**, so it's recommended to run the download in a tmux/screen session to handle any network interruptions.
+
 
 ```bash
-aria2c -x6 -s6 "https://de012a78750e59b808d922b39535e862.s3.eu-west-1.amazonaws.com/v1.1.0-rc.1-fork.4.tgz"
-pv v1.1.0-rc.1-fork.4.tgz | tar xzf -
+urls=(
+  "https://storage.googleapis.com/zkevm/zkproverc/v0.6.0.0-rc.1.tgz"
+  "https://storage.googleapis.com/zkevm/zkproverc/v0.7.0.0-rc.1.tgz"
+  "https://storage.googleapis.com/zkevm/zkproverc/v0.7.0.0-rc.3.tgz"
+  "https://storage.googleapis.com/zkevm/zkproverc/v0.7.0.0-rc.7-fork.1.tgz"
+  "https://storage.googleapis.com/zkevm/zkproverc/v0.8.0.0-rc.1-fork.1.tgz"
+  "https://storage.googleapis.com/zkevm/zkproverc/v0.8.0.0-rc.2-forkid.2.tgz"
+  "https://storage.googleapis.com/zkevm/zkproverc/v1.0.0-rc.1-fork.3.tgz"
+  "https://storage.googleapis.com/zkevm/zkproverc/v1.1.0-rc.1-fork.4.tgz"
+  "https://storage.googleapis.com/zkevm/zkproverc/v2.0.0-RC4-fork.5.tgz"
+  "https://storage.googleapis.com/zkevm/zkproverc/v3.0.0-RC2-fork.6.tgz"
+  "https://storage.googleapis.com/zkevm/zkproverc/v3.0.0-RC3-fork.6.tgz"
+)
+
+for url in "${urls[@]}"; do
+  aria2c -x6 -s6 "$url"
+done
 ```
+
 
 Once the download is finished, you should extract the files using the following command:
 
