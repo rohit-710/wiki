@@ -1,7 +1,7 @@
 ---
-id: pol
-title: POL
-sidebar_label: POL
+id: pol-faqs
+title: Polygon Ecosystem Token FAQs
+sidebar_label: FAQs
 description: Learn about Polygon's native token, MATIC.
 keywords:
   - docs

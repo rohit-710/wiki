@@ -32,7 +32,17 @@ module.exports = {
       link: {
         type: "generated-index",
       },
-      items: ["pos/assets/matic", "pos/assets/pol"],
+      items: [
+        {
+          type: "category",
+          label: "POL",
+          link: {
+            type: "generated-index",
+          },
+          items: ["pos/assets/pol/pol-overview","pos/assets/pol/pol-faqs"],
+        },
+        "pos/assets/matic",
+      ],
     },
     {
       type: "html",
