@@ -26,13 +26,13 @@ To create a new smart contract using Crossmint's Developer Console, follow the s
 
 1. Navigate to the [Crossmint's Developer Console page:](https://staging.crossmint.com/console/overview/?utm_source=backlinks)
 
-  ![img](../../static/img/Crossmint/screenshot1.jpg)
+  ![img](../../../static/img/Crossmint/screenshot1.jpg)
 
   > You need to create a developer account on Crossmint using your email Id before proceeding with the above step. 
 
 2. Click on Collections on the top navbar.
 
-  ![img](../../static/img/Crossmint/screenshot2.png)
+  ![img](../../../static/img/Crossmint/screenshot2.png)
 4. Click on "New Collection" to create a new collection on your console.
 5. Enter the collection information 
    - `Collection name`: The name of your contract and NFT Collection
@@ -42,27 +42,27 @@ To create a new smart contract using Crossmint's Developer Console, follow the s
    - `Discord`: Invite link for your Discord server
    - Also upload the cover image for your NFT Collection and your contract. 
 
-  ![img](../../static/img/Crossmint/screenshot3.png)
+  ![img](../../../static/img/Crossmint/screenshot3.png)
 6. Click on "Create a new contract" to create a new NFT contract.
 
-  ![img](../../static/img/Crossmint/screenshot4.png)
+  ![img](../../../static/img/Crossmint/screenshot4.png)
 7. Select the preferred use-case for your collection. You can select both if you wish to do so and this can be changed later. 
 
-  ![img](../../static/img/Crossmint/screenshot5.png)
+  ![img](../../../static/img/Crossmint/screenshot5.png)
 8. Select your blockchain as Polygon.
 
-  ![img](../../static/img/Crossmint/screenshot6.png)
+  ![img](../../../static/img/Crossmint/screenshot6.png)
 9. Configure your Payment settings
    - `NFT Price`: The price per NFT in MATIC
    - `Recipient address`: Enter the address where you want to receive the revenue from the sales of the NFTs.
 
-  ![img](../../static/img/Crossmint/screenshot7.png)
+  ![img](../../../static/img/Crossmint/screenshot7.png)
 10. Review the details of your collection and click on "Deploy contract"
 
-  ![img](../../static/img/Crossmint/screenshot8.png)
+  ![img](../../../static/img/Crossmint/screenshot8.png)
 11. Now you can upload your NFTs along with their metadata
 
-  ![img](../../static/img/Crossmint/screenshot9.png)
+  ![img](../../../static/img/Crossmint/screenshot9.png)
 For additional information on Deploy, please refer [Crossmint’s documentation](https://docs.crossmint.com/docs/create-an-nft-collection/?utm_source=backlinks).
 
 ---
