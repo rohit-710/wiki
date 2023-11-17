@@ -60,7 +60,7 @@ It is important to keep in mind that a sentry node must always be set up before 
     ```shell
     curl -L https://raw.githubusercontent.com/maticnetwork/install/main/heimdall.sh | bash -s -- <version> <network> <node_type>
     # Example:
-    # curl -L https://raw.githubusercontent.com/maticnetwork/install/main/heimdall.sh | bash -s -- v0.3.4 mainnet sentry
+    # curl -L https://raw.githubusercontent.com/maticnetwork/install/main/heimdall.sh | bash -s -- v1.0.3 mainnet sentry
     ```
 
 ### Bor
@@ -78,7 +78,7 @@ It is important to keep in mind that a sentry node must always be set up before 
     curl -L https://raw.githubusercontent.com/maticnetwork/install/main/bor.sh | bash -s -- <version> <network> <node_type>
 
     # Example:
-    # curl -L https://raw.githubusercontent.com/maticnetwork/install/main/bor.sh | bash -s -- v0.4.0 mainnet sentry
+    # curl -L https://raw.githubusercontent.com/maticnetwork/install/main/bor.sh | bash -s -- v1.1.0 mainnet sentry
     ```
 
 ### Check installation
@@ -107,7 +107,7 @@ In this section, we will go through steps to initialize and customize configurat
 
 :::caution
 
-Bor and Heimdall 0.3.0 uses standardized paths for configuration files and chain data. If you have existing
+Bor v1.1.0 and Heimdall v1.0.3 use standardized paths for configuration files and chain data. If you have existing
 config files and chain data on your node, please skip this section and jump directly to **[Migration](#upgrade-from-02x-to-03x) section** to learn about migrating configs and data to standardized file locations.
 
 :::
@@ -313,7 +313,7 @@ node ready.
 
 :::caution
 
-Bor and Heimdall 0.3.0 uses standardized paths for configuration files and chain data. If you have existing
+Bor v1.1.0 and Heimdall v1.0.3 use standardized paths for configuration files and chain data. If you have existing
 config files and chain data on your node, please jump directly to **[Migration](#upgrade-from-02x-to-03x-1) section** to learn about migrating configs and data to standardized file locations.
 
 :::
