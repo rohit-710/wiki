@@ -128,7 +128,7 @@ Both binaries must be installed and run in the correct order to function properl
 
 ### Heimdall
 
-Install the latest version of Heimdall and related services. Make sure you checkout to the correct [release version](https://github.com/maticnetwork/heimdall/releases). Note that the latest version, [Heimdall v0.3.4](https://github.com/maticnetwork/heimdall/releases/tag/v0.3.4), contains enhancements such as:
+Install the latest version of Heimdall and related services. Make sure you checkout to the correct [release version](https://github.com/maticnetwork/heimdall/releases). Note that the latest version, [Heimdall v1.0.3](https://github.com/maticnetwork/heimdall/releases/tag/v1.0.3), contains enhancements such as:
 1. Restricting data size in state sync txs to:
     * **30Kb** when represented in **bytes**
     * **60Kb** when represented as **string**
@@ -149,7 +149,7 @@ To install **Heimdall**, run the below commands:
 curl -L https://raw.githubusercontent.com/maticnetwork/install/main/heimdall.sh | bash -s -- <heimdall_version> <network_type> <node_type>
 ```
 
-**heimdall_version**: `valid v0.3+ release tag from https://github.com/maticnetwork/heimdall/releases`
+**heimdall_version**: `valid v1.0+ release tag from https://github.com/maticnetwork/heimdall/releases`
 **network_type**: `mainnet` and `mumbai`
 **node_type**: `sentry`
 
@@ -167,13 +167,13 @@ Before proceeding, Heimdall should be installed on both the sentry and validator
 
 ### Installing Bor
 
-Install the latest version of Bor, based on valid v0.3+ [released version](https://github.com/maticnetwork/bor/releases).
+Install the latest version of Bor, based on valid v1.0+ [released version](https://github.com/maticnetwork/bor/releases).
 
 ```bash
 curl -L https://raw.githubusercontent.com/maticnetwork/install/main/bor.sh | bash -s -- <bor_version> <network_type> <node_type>
 ```
 
-**bor_version**: `valid v0.3+ release tag from https://github.com/maticnetwork/bor/releases`
+**bor_version**: `valid v1.0+ release tag from https://github.com/maticnetwork/bor/releases`
 **network_type**: `mainnet` and `mumbai`
 **node_type**: `sentry`
 
