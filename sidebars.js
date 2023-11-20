@@ -346,6 +346,7 @@ module.exports = {
                 "pos/deploy/alchemy",
                 "pos/deploy/chainide",
                 "pos/deploy/chainstack",
+                "pos/deploy/crossmint",
                 "pos/deploy/getblock",
                 "pos/deploy/quicknode",
                 "pos/deploy/smartpress",
