@@ -1,5 +1,5 @@
 ---
-id: Crossmint
+id: crossmint
 title: How to Deploy a Smart Contract Using Crossmint
 sidebar_label: Using Crossmint
 description: "Lean how to deploy smart contracts on Polygon PoS using Crossmint."
