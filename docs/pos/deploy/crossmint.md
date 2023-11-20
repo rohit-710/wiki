@@ -26,7 +26,7 @@ To create a new smart contract using Crossmint's Developer Console, follow the s
 
 1. Navigate to the [Crossmint's Developer Console page:](https://staging.crossmint.com/console/overview/?utm_source=backlinks)
 
-  ![img](../../../static/img/Crossmint/screenshot1.jpg)
+  ![img](/img/Crossmint/screenshot1.jpg)
 
   > You need to create a developer account on Crossmint using your email Id before proceeding with the above step. 
 
